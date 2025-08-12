@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 import urllib3
 import zipfile
+import os
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -30,6 +31,11 @@ def recommend(movie):
         recommend_movies.append(movies.iloc[i[0]].title)
         recommended_movies_posters.append(fetch_poster(movie_id))
     return recommend_movies, recommended_movies_posters
+
+# --- Added: Extract similarity.pkl from similarity.zip if not present ---
+if not os.path.exists('similarity.pkl'):
+    with zipfile.ZipFile('similarity.zip', 'r') as zip_ref:
+        zip_ref.extract('similarity.pkl', '.')
 
 movies_dict = pickle.load(open('movie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
