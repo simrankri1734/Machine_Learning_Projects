@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import requests
 import urllib3
+import zipfile
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
