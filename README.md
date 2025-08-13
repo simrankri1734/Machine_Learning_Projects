@@ -23,9 +23,9 @@ A web-based **Movie Recommender System** built using Python and Streamlit. This 
 
 ---
 
-##Usage
+## Usage
 
-- Open the app in your browser (usually http://localhost:8501).
+- Open the app in your browser (https://machine-learning-project-1-983v.onrender.com).
 - Select a movie from the dropdown list.
 - Click the Recommend button to see recommended movies along with their posters.
 
