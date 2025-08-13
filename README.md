@@ -29,11 +29,5 @@ A web-based **Movie Recommender System** built using Python and Streamlit. This 
 - Select a movie from the dropdown list.
 - Click the Recommend button to see recommended movies along with their posters.
 
-##Project Structure
+---
 
-- app.py – Main Streamlit app file.
-- Movie-Recommender-System.ipynb – Notebook containing data exploration and model building.
-- movies.pkl – Pickled movie dataset.
-- similarity.pkl – Pickled similarity matrix.
-- requirements.txt – Python dependencies.
-- 
